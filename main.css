@@ -71,3 +71,19 @@ span{
     background-color: white;
     text-align: center;
 }
+.meal-searches{
+    margin: 2rem 0;
+}
+blockquote{
+    font-size:18px;
+    
+}
+.meal-searches cite{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.meal-searches-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
