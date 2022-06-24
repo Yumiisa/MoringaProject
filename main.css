@@ -60,6 +60,7 @@ span{
 .heading{
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-transform: capitalize;
 }
 .container{
     min-height: 100vh;
@@ -75,7 +76,7 @@ span{
     margin: 2rem 0;
 }
 blockquote{
-    font-size:18px;
+    font-size:1.5rem;   
     
 }
 .meal-searches cite{
@@ -119,4 +120,11 @@ blockquote{
 }
 .search-btn:hover{
     background-color: rgb(247, 247, 125);
+}
+.meal-result{
+    margin-top: 3.5rem;
+    text-transform: capitalize;
+}
+#meal{
+    margin: 2.4rem 0;
 }
