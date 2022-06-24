@@ -87,3 +87,36 @@ blockquote{
     display: flex;
     align-items: stretch;
 }
+.search-content, .search-btn{
+    width: 100%;
+}
+.search-content{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-content::placeholder{
+    color: var(--yellow);
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.search-btn{
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+}
+.search-btn:hover{
+    background-color: rgb(247, 247, 125);
+}
