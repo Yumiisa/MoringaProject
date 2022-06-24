@@ -5,8 +5,11 @@
     text-decoration: none;
     list-style: none;
 }
+:root{
+    --yellow:rgb(222, 222, 104);
+}
 .navbar a{
-    color: rgb(158, 153, 153);
+    color: rgb(28, 30, 26);
     display: flex;
     background-color: rgb(50, 45, 45); 
     height: 60px;
@@ -48,4 +51,13 @@ ul li ul{
 }
 span{
     padding:3px;
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.05rem; 
+    cursor: pointer;     
+}
+.heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
