@@ -61,3 +61,13 @@ span{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+.container{
+    min-height: 100vh;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
