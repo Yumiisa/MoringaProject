@@ -1,5 +1,6 @@
 //grab all element required for dom manipulation
-const searchBtn = document.getElementById('search-btn');
-const mealList = document.getElementById('meal');
-const mealDetailsContent = document.querySelector('.meal-details-content');
-const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const searchButton = document.getElementById('search-btn');
+const mealLists = document.getElementById('meal');
+const mealDetails = document.querySelector('.meal-details-content');
+const recipeCloseButton = document.getElementById('recipe-close-btn');
+searchButton.addEventListener('click', getMealLists);
