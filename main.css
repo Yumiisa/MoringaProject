@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar a{
+    color: rgb(158, 153, 153);
+    display: flex;
+    background-color: rgb(50, 45, 45); 
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif;  
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: background-color 0.4s;
+    
+}
+.navbar a:hover{
+    background-color: rgb(66, 56, 56);
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.navbar ul li:hover .submenu > li{
+    display: block;
+    top: 0px;
+}
+ul li ul li{
+    position:absolute;
+   top:0px;
+   display: none;
+}
+ul li ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    
+}
