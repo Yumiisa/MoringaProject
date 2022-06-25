@@ -268,7 +268,7 @@ blockquote{
     width: 100%;
 }
 /*media query*/
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
     .meal-searches-box{
        width: 540px;
         margin: 20px;
@@ -277,10 +277,15 @@ blockquote{
     }
     .navbar a{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        margin: 20px;
+        flex-wrap: wrap;
+        height: 100px;
+        
     }
+    .navbar ul{
+        width: 100%;
+    }
+    
 }
 @media screen and (min-width:768px){
     #meal{
@@ -294,21 +299,12 @@ blockquote{
     .meal-details{
         width: 700px;
     } 
-    .navbar a{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 20px;
-    }
+   
 }
 @media screen and (min-width:990px){
     #meal{
         grid-template-columns: repeat(3,1fr);
     }
-    .navbar a{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 20px;
+    
     }
-}
+
