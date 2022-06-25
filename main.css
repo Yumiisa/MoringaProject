@@ -11,7 +11,7 @@
 .navbar a{
     color: rgb(28, 30, 26);
     display: flex;
-    background-color: rgb(50, 45, 45); 
+    background-color: rgb(217, 211, 211); 
     height: 60px;
     font-family: 'Times New Roman', Times, serif;  
     align-items: center;
@@ -19,21 +19,27 @@
     justify-content: center;
     text-transform: capitalize;
     transition: background-color 0.4s;
+    border: none;
+    
+    
     
 }
+
 .navbar a:hover{
-    background-color: rgb(66, 56, 56);
+    background-color: rgb(129, 125, 125);
 }
 
 .navbar ul{
     display: flex;
     width: 80%;
     margin: auto;
+    
 }
 .navbar li{
-    width: 100%;
+    width:100%;
     position: relative;
     text-align: center;
+    
 }
 .navbar ul li:hover .submenu > li{
     display: block;
@@ -43,11 +49,13 @@ ul li ul li{
     position:absolute;
    top:0px;
    display: none;
+  
 }
 ul li ul{
     display: flex;
     flex-direction: column;
     position: absolute;
+    margin: auto;
     width: 100%;
     
 }
