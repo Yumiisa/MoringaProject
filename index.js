@@ -1,4 +1,6 @@
 //grab all element required for dom manipulation
+document.addEventListener('DOMContentLoaded', ()=>{
+
 const searchButton = document.getElementById('search-btn');
 const mealLists = document.getElementById('meal');
 const mealDetails = document.querySelector('.meal-details-content');
@@ -72,4 +74,4 @@ mealDetails.innerHTML =myMeal;
 mealDetails.parentElement.classList.add('showRecipe');
 }
 
-
+})
