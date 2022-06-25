@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
 }
 :root{
     --yellow:rgb(222, 222, 104);
@@ -68,12 +69,14 @@ span{
     cursor: pointer;     
 }
 .heading{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;  
 }
 .container{
     min-height: 100vh;
+    
 }
 .meal-wrapper{
     max-width: 1280px;
@@ -86,7 +89,8 @@ span{
     margin: 2rem 0;
 }
 blockquote{
-    font-size:1.5rem;   
+    font-size:1.2rem;  
+    font-family: 'Times New Roman', Times, serif;   
     
 }
 .meal-searches cite{
@@ -148,6 +152,7 @@ blockquote{
     width: 60%;
     display: block;
     margin: auto;
+    height:60%;
 }
 .meal-name{
     padding: 1.5rem 0.5rem;
@@ -174,18 +179,19 @@ blockquote{
 }
 .meal-details{
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     background-color: var(--yellow);
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    height: 80%;
     overflow: hidden;
     padding: 2rem 0;
     display:none;
     padding: 2rem 0;
+    font-size: 18px;
 }
 .meal-details::-webkit-scrollbar{
     width: 10px;
@@ -261,7 +267,30 @@ blockquote{
     font-weight: 600;
     width: 100%;
 }
-
-
-
-
+/*media query*/
+@media screen and (min-width:600px){
+    .meal-searches-box{
+       width: 540px;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;*/
+    }
+}
+@media screen and (min-width:768px){
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .meal-item{
+        margin: 0;
+    }
+    .meal-details{
+        width: 700px;
+    } 
+}
+@media screen and (min-width:990px){
+    #meal{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
