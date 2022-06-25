@@ -5,7 +5,11 @@ const mealDetails = document.querySelector('.meal-details-content');
 const recipeCloseButton = document.getElementById('recipe-close-btn');
 //event listener
 searchButton.addEventListener('click', getMealLists);
-mealLists.addEventListener('click', getRecipe)
+mealLists.addEventListener('click', getRecipe);
+recipeCloseButton.addEventListener('click', () => {
+    mealDetails.parentElement.classList.remove('showRecipe');
+});
+
 function getMealLists(){
 let searchInputTxt = document.getElementById('search-input').value.trim();
 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
@@ -34,7 +38,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
             mealLists.classList.add('notFound');
         }
 
-        mealLists.innerHTML = html;
+        mealLists.innerHTML = myData;
     });
 }
     //get meal recipe
@@ -44,7 +48,30 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
             let mealItems = e.target.parentElement.parentElement;
             fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItems.dataset.id}`)
         .then(response => response.json())
-        .then(data => mealRecipeModal(data.meals));
+        .then(data => mealRecipe(data.meals));
     }
 }
+function mealRecipe(meal){
+    console.log(meal);
+    meal=meal[0];
+    let myData = `
+    <h2 class = "recipe-title">${meal.strMeal}</h2>
+    <p class = "recipe-category">${meal.strCategory}</p>
+    <div class = "recipe-instruct">
+        <h3>Instructions:</h3>
+        <p>${meal.strInstructions}</p>
+    </div>
+    <div class = "recipe-meal-img">
+        <img src = "${meal.strMealThumb}" alt = "">
+    </div>
+    <div class = "recipe-link">
+        <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
+    </div>
+`;
+mealDetails.innerHTML = myData;
+mealDetails.parentElement.classList.add('showRecipe');
+}
+
+
+
     

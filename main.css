@@ -128,3 +128,16 @@ blockquote{
 #meal{
     margin: 2.4rem 0;
 }
+.meal-item{
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0,0,0 0.79);
+    margin:2rem 0;
+}
+.meal-img img{
+    width: 100%;
+    display: block;
+}
+.meal-name{
+    padding: 1.5rem 0.5rem;
+}
