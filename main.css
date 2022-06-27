@@ -9,10 +9,13 @@
 :root{
     --yellow:rgb(222, 222, 104);
 }
+body{
+    background:grey
+}
 .navbar a{
     color: rgb(28, 30, 26);
     display: flex;
-    background-color: rgb(217, 211, 211); 
+    background-color: rwhite; 
     height: 60px;
     font-family: 'Times New Roman', Times, serif;  
     align-items: center;
@@ -191,7 +194,7 @@ blockquote{
     display:none;
     padding: 2rem 0;
     font-size: 18px;
-    overflow: hidden;
+    overflow:scroll;
 }
 .meal-details::-webkit-scrollbar{
     width: 10px;
